@@ -4,9 +4,8 @@ on:
     branches:
       - main
 env:
-  AZURE_RESOURCE_GROUP: cd-with-actions
-  AZURE_APP_PLAN: actions-ttt-deployment
-  AZURE_LOCATION: '"West Europe"'
+  DOCKER_IMAGE_NAME: georgdrobny-azure-ttt
+  IMAGE_REGISTRY_URL: docker.pkg.github.com
   AZURE_WEBAPP_NAME: georgdrobny-ttt-app
 jobs:
   build:
